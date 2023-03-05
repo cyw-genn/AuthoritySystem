@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div style="width: 600px;height: 100%;text-align: center;">
+  <form action="/addclient" method="post">
+    编号：<input class="form-control" type="text" th:value="${id}" name="id"><br>
+    姓名：<input class="form-control" type="text" th:value="${name}" name="name"><br>
+    密码：<input class="form-control" type="text" th:value="${password}" name="password"><br>
+    身份证：<input class="form-control" type="text" th:value="${identify}" name="identify"><br>
+    qq：<input class="form-control" type="text" th:value="${qq}" name="qq"><br>
+    微信：<input class="form-control" type="text" th:value="${wechat}" name="wechat"><br>
+    地址：<input class="form-control" type="text" th:value="${address}" name="address"><br>
+    电话：<input class="form-control" type="text" th:value="${telephone}" name="telephone"><br>
+    email：<input class="form-control" type="text" th:value="${email}" name="email"><br>
+    个人主页：<input class="form-control" type="text" th:value="${personalpage}" name="personalpage"><br>
+    身份认证时间：<input class="form-control" type="text" th:value="${idtime}" name="idtime"><br>
+    手机认证时间：<input class="form-control" type="text" th:value="${phonetime}" name="phonetime"><br>
+    邮箱认证时间：<input class="form-control" type="text" th:value="${mailtime}" name="mailtime"><br>
+    状态：<input class="form-control" type="text" th:value="${status}" name="status"><br>
+    创建时间：<input class="form-control" type="text" th:value="${createtime}" name="createtime"><br>
+    <button class="btn btn-primary btn-lg btn-block"><font color="black">保存</font></button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改角色</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div style="width: 600px;height: 100%;text-align: center;">
+    <form action="/update" method="post">
+        <input name="_method" type="hidden" value="put">
+        ID：<input class="form-control" type="text" th:value="${roles.id}" name="id"><br>
+        角色名：<input class="form-control" type="text" th:value="${roles.roleName}" name="roleName"><br>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">提交</button>
+    </form>
+</div>
+</body>
+</html>
